@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/EditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:text=""
+
+        app:layout_constraintEnd_toEndOf="@+id/EditName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EditName"
+        app:layout_constraintTop_toBottomOf="@+id/EditName" />
+
+    <EditText
+        android:id="@+id/EditPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Contact(Phone Numbers)"
+        app:layout_constraintEnd_toEndOf="@+id/EditEmail"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/EditEmail"
+        app:layout_constraintTop_toBottomOf="@+id/EditEmail" />
+
+    <EditText
+        android:id="@+id/EditAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="@+id/EditPhone"
+        app:layout_constraintStart_toStartOf="@+id/EditPhone"
+        app:layout_constraintTop_toBottomOf="@+id/EditPhone" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:text="Add"
+        android:width="180dp"
+        app:layout_constraintEnd_toEndOf="@+id/EditAddress"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@+id/EditAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EditAddress" />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:width="200dp"
+        android:text="Update"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnThem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnThem"
+        app:layout_constraintTop_toBottomOf="@+id/btnThem" />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:width="180dp"
+        android:text="Delete"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnThem"
+        app:layout_constraintTop_toBottomOf="@+id/EditAddress" />
+
+    <Button
+        android:id="@+id/btnXem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:width="180dp"
+        android:text="View"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnXoa"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnXoa"
+        app:layout_constraintTop_toBottomOf="@+id/btnXoa" />
+
+</android.support.constraint.ConstraintLayout>
